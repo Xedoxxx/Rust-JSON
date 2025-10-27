@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 use std::fmt::Write;
+use std::fmt;
 
 #[derive(PartialEq, Clone)]
 pub enum JsonValue {
@@ -9,6 +10,12 @@ pub enum JsonValue {
     Object(HashMap<String, JsonValue>),
     Boolean(bool),
     Null,
+}
+
+impl fmt::Display for JsonValue {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{}", as_string(self.clone()))
+    }
 }
 
 pub fn as_string(value: JsonValue) -> String {

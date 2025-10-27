@@ -1,0 +1,14 @@
+{
+    "user_id": "2038271",
+    "name": "John",
+    "surname": "Devops",
+    "age": 24,
+    "is_banned": false,
+    "email": "john.devops@example.com",
+    "roles": ["developer", "admin"],
+    "metadata": {
+        "created_at": "2024-01-15",
+        "last_login": "2024-03-20",
+        "login_count": 42
+    }
+}
