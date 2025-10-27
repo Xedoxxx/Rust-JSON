@@ -13,7 +13,7 @@
 - `Object` (HashMap<String, JsonValue>)
 - `Null`
 
-See [main.rs](src/main.rs) for usage examples.
+See [parse.rs](tests/parse.rs) for usage examples.
 
 ## Development
 
